@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+<div style="padding-left: 20px; border-left: 3px solid #4CAF50;">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Vite Template
 
-Currently, two official plugins are available:
+![React Vite Template](https://images.pexels.com/photos/21047012/pexels-photo-21047012.png?auto=compress&cs=tinysrgb&w=600&lazy=load)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Version**: 0.0.0
 
-## Expanding the ESLint configuration
+**Creator**: Upendra Yadav
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Description
 
-- Configure the top-level `parserOptions` property like this:
+This template provides a starting point for developing React applications with Vite. It includes essential dependencies and configurations to kickstart your project development.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Dependencies
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **@emotion/react**: ^11.11.4
+- **@emotion/styled**: ^11.11.5
+- **@fontsource/roboto**: ^5.0.12
+- **@mui/icons-material**: ^5.15.15
+- **@mui/material**: ^5.15.15
+- **react**: ^18.2.0
+- **react-dom**: ^18.2.0
+
+## Dev Dependencies
+
+- **@types/react**: ^18.2.66
+- **@types/react-dom**: ^18.2.22
+- **@typescript-eslint/eslint-plugin**: ^7.2.0
+- **@typescript-eslint/parser**: ^7.2.0
+- **@vitejs/plugin-react**: ^4.2.1
+- **autoprefixer**: ^10.4.19
+- **eslint**: ^8.57.0
+- **eslint-plugin-react-hooks**: ^4.6.0
+- **eslint-plugin-react-refresh**: ^0.4.6
+- **postcss**: ^8.4.38
+- **tailwindcss**: ^3.4.3
+- **typescript**: ^5.2.2
+- **vite**: ^5.2.0
+
+## Scripts
+
+- **dev**: Run development server with Vite. `npm run dev`
+- **build**: Build the project using TypeScript and Vite. `npm run build`
+- **lint**: Lint the project using ESLint. `npm run lint`
+- **preview**: Preview the built project with Vite. `npm run preview`
+
+## How to Use
+
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Start the development server with `npm run dev`.
+4. Build your project using `npm run build`.
+5. Lint your code using `npm run lint`.
+6. Preview the built project using `npm run preview`.
+
+</div>
