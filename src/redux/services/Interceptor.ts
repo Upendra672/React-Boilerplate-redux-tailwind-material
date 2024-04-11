@@ -1,5 +1,5 @@
 import axios from "axios";
-import toast from "react-hot-toast";
+import ShowNotification from "../../utils/ShowNotification";
 import { EndPoint } from "./ApiEndPoints";
 
 const BASE_URL: string = EndPoint.BASE_URL;
@@ -34,13 +34,13 @@ interceptor.interceptors.response.use(
         (error.response && status === 409) ||
         (error.response && status === 404)
       ) {
-        toast.error(error.response.data.message);
+        ShowNotification("error",error.response.data.message)
       } else {
         // Handle other errors
-        toast.error(data.message || "An error occurred.");
+        ShowNotification("error", data.message||"An error occurred.")
       }
     } else {
-      toast.error("Server not responding.");
+      ShowNotification("error", "Server is not responding")
     }
     return Promise.reject(error);
   }

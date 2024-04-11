@@ -2,7 +2,7 @@ const parsedUrl = new URL(window.location.href);
 const dynamicUrl = parsedUrl.origin;
 
 export const environment = {
-    production: true,
+    production: false,
     API_PATH: 'http://192.168.10.12:4200',
 };
 
